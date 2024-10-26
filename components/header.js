@@ -38,7 +38,7 @@ const Nav = () => {
                            <li><a href="#" className={`${styles['nav-item']} block text-center`}>Preise</a></li>
                            <li><a href="#" className={`${styles['nav-item']} block text-center`}>Layouts</a></li>
                            <li>
-                               <Link href="/login" legacyBehavior>
+                               <Link href="/" legacyBehavior>
                                    <a className={`${styles['nav-item']} block text-center`}>Login</a>
                                </Link>
                                <img src="/images/loginbg.png"/>
@@ -54,7 +54,7 @@ const Nav = () => {
                            <li><a href="#" className={`${styles['nav-item']} block`}>Preise</a></li>
                            <li><a href="#" className={`${styles['nav-item']} block`}>Layouts</a></li>
                            <li>
-                               <Link href="/login" legacyBehavior>
+                               <Link href="/" legacyBehavior>
                                    <a className={`${styles['nav-item']} block`}>Login</a>
                                </Link>
                            </li>
