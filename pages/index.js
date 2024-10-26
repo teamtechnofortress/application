@@ -12,7 +12,6 @@ const Home = () => {
       <title>CV Maker</title>
       <meta name="description" content="cvmaker.com - CV  Maker"/>
       </Head>
-
       <Header/>
       <HomeContent/>
       <Footer />
