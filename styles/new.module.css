@@ -19,6 +19,9 @@
 .logo{
   width: 60%;
 }
+.nav-item {
+  font-family: 'Poppins Regular', sans-serif;
+}
 .banner-sec{
   background-image: url('/images/banner.png'); /* Ensure the path is correct */
   background-size: cover; /* Ensures the entire image is visible */
@@ -43,14 +46,13 @@
 }
 .banner-btn{
   font-family: 'Poppins Bold', sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    background-color: #E7FC41;
-    width: 32%;
-    padding: 16px;
-    border-radius: 76px;
-    transition: all 0.3s ease;
-}
+      font-size: 24px;
+      font-weight: 900;
+      background-color: #e7fc41;
+      padding: 10px 55px;
+      border-radius: 76px;
+      transition: all .3s ease;
+  }
 .banner-btn:hover,.appartment-btn:hover{
    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2)
 }
@@ -100,9 +102,9 @@
 }
 .appartment-btn {
   font-family: 'Poppins Medium', sans-serif;
-  font-size: 25px;
-  background-color: #E7FC41;
-  padding: 16px 20px;
+  font-size: 23px;
+  background-color: #e7fc41;
+  padding: 10px 40px;
   border-radius: 33px;
   transition: all 0.3s ease;
 }
