@@ -280,7 +280,30 @@
 .nav-item:hover{
   color: #616826;;
 }
-
+.accordion-button::before {
+  content: url('/images/plusicon.png');
+  position: absolute;
+  left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.accordion-button{
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 2.5rem;
+}
+.open::before {
+  content: url('/images/minusicon.png');
+  transform: rotate(180deg);
+}
+.accordion-item {
+  padding: 20px 0px;
+  border-bottom: 1px solid #cccc;
+}
+.accordion-content{
+  padding: 20px 10px;
+}
 
 
 @media screen and (min-width: 1920px) {
@@ -292,7 +315,11 @@
   font-size: 27px;
 }
 }
-
+@media screen and (min-width: 1550px) {
+  .padding-baner{
+    padding: 14% 4% 40% 8%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .banner-btn{
     width: 50%;

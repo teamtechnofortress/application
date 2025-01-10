@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/new.module.css';
 import ImageSlider from "@/components/ImageSlider";
 import TestemonialSlider from "@/components/TestemonialSlider";
+import Faq from "@/components/Faq";
 
 const HomeContent = () => {
   const [visibleVideo, setVisibleVideo] = useState(null);
@@ -57,7 +58,7 @@ const HomeContent = () => {
             <span className={`${styles['checked']} fa fa-star`}></span>
             <span className={`${styles['checked']} fa fa-star`}></span>
             <p className={`${styles['first-star-p']} lg:pl-4`}>
-              Ausgezeichent, <strong className={`${styles['color-strng']}`}>4.5</strong> auf{' '}
+            Ausgezeichnet, <strong className={`${styles['color-strng']}`}>4.5</strong> auf{' '}
               <strong>
                 <span className={`${styles['black-star']} fa fa-star`}></span> Trustpilot
               </strong>
@@ -75,7 +76,7 @@ const HomeContent = () => {
           Mit Wohnungsmappe erstellst du in wenigen Minuten eine perfekte Bewerbungsmappe, die Vermieter überzeugt. So sparst du Zeit, reduzierst Stress und erhöhst deine Chancen auf die Traumwohnung – alles digital und unkompliziert.
         </p>
         <button className={`${styles['appartment-btn']} mt-10`}>Jetzt loslegen</button>
-        <h1 className={`${styles['heading-sub']} mt-20 pt-20`}>Warum Wohnungsmappe?</h1>
+        
       </div>
 
       {/* Third section */}
@@ -131,6 +132,11 @@ const HomeContent = () => {
         <button className={`${styles['appartment-btn']} mt-10`}>Jetzt starten und deine Chancen erhöhen!!</button>
       </div>
 
+       {/* Third section */}
+      <div className={`${styles['fifth-section']} mx-auto mb-10 pb-10 container-fluid`}>
+        <h1 className={`${styles['heading-sub']} pt-20`}>Kundenerfahrungen</h1>
+        <TestemonialSlider />
+      </div>
       {/* Fourth section */}
       <div className={`${styles['forth-section']} mt-10 container-fluid`}>
         <img src="/images/Mockupviele.png" width="100%" alt="" />
@@ -180,60 +186,10 @@ const HomeContent = () => {
           </div>
         </div>
       </div>
-       {/* seven section */}
-       <div className={`${styles['fifth-section']} mx-auto mb-10 pb-10 container-fluid`}>
-        <h1 className={`${styles['heading-sub']} pt-20`}>Kundenerfahrungen</h1>
-        <TestemonialSlider />
-      </div>
-      {/* eight section */}
-      <div className={`${styles['eight-section']} mx-auto container-fluid`}>
-        <h1 className={`${styles['heading-sub']} pt-20`}>Noch Fragen?</h1>
-        <div className="container mx-auto lg:mt-24 mt-12 mb-8">
-         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-9 gap-2 mt-5 pt-2">
-            <div className=" md:col-span-1 lg:col-span-2">     
-            </div>
-            <div className=" md:col-span-1 lg:col-span-5">
-               <div className="">
-                  <div className="flex  via-red-300 p-3 sm:p-3 to-indigo-500">
-                  <div className="w-full py-8 mx-auto rounded-lg">
-                      <details className="accordion-item w-full bg-white border-b border-gray-300 cursor-pointer mb-3">
-                        <summary className="accordion-header flex items-center px-4 py-3 text-gray-800">
-                          Wie funktioniert Wohnungsmappe
-                        </summary>
-                        <p className="accordion-content px-4 py-3 text-gray-600">
-                          Du benötigst unter anderem eine Schufa-Auskunft, Einkommensnachweis und Selbstauskunft. Wir helfen dir, diese Dokumente zusammenzustellen.
-                        </p>
-                      </details>
-
-                      <details className="accordion-item w-full bg-white border-b border-gray-300 cursor-pointer mb-3">
-                        <summary className="accordion-header flex items-center px-4 py-3 text-gray-800">
-                          Wie sicher sind meine Daten?
-                        </summary>
-                        <p className="accordion-content px-4 py-3 text-gray-600">
-                          Du benötigst unter anderem eine Schufa-Auskunft, Einkommensnachweis und Selbstauskunft. Wir helfen dir, diese Dokumente zusammenzustellen.
-                        </p>
-                      </details>
-
-                      <details className="accordion-item w-full bg-white border-b border-gray-300 cursor-pointer mb-3">
-                        <summary className="accordion-header flex items-center px-4 py-3 text-gray-800">
-                          Welche Dokumente brauche ich?
-                        </summary>
-                        <p className="accordion-content px-4 py-3 text-gray-600">
-                          Du benötigst unter anderem eine Schufa-Auskunft, Einkommensnachweis und Selbstauskunft. Wir helfen dir, diese Dokumente zusammenzustellen.
-                        </p>
-                      </details>
-                    </div>
-                  </div>
-                  <div className="p-4 md:col-span-1 lg:col-span-2">
-                  </div>
-               </div>
-            </div>
-            <div className="p-4 md:col-span-1 lg:col-span-2">     
-            </div>
-         </div>
-      </div>
-    
-      </div>
+      
+       
+      {/* Faq section */}
+      <Faq />
       {/* Ninth section */}
       <div className={`${styles['ninth-section']} mx-auto mb-10 pb-10 container-fluid`}>
         <h1 className={`${styles['ninth-heading']} pt-20`}>Tipps & Tricks</h1>
